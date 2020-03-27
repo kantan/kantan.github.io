@@ -1,0 +1,357 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* This is a hack so that the grid works without minified HTML*/
+
+.grid {
+  letter-spacing: -0.31em;
+}
+
+.grid__item {
+  letter-spacing: normal;
+}
+
+/* Typography */
+
+body {
+  /*brand black*/
+  color: #26282d;
+}
+
+.text--lightblue {
+  color: #1e67fc;
+}
+
+li {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25em;
+}
+
+.heading-1 {
+  font-size: 54px;
+}
+
+.sub-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.heading-2 {
+  font-size: 36px;
+}
+
+.heading-3 {
+  font-size: 28px;
+}
+
+.body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.tag {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .heading-1 {
+    font-size: 48px;
+  }
+
+  .heading-2 {
+    font-size: 32px;
+  }
+
+  .heading-3 {
+    font-size: 24px;
+  }
+
+  .body {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-1 {
+    font-size: 36px;
+  }
+}
+
+/*Media*/
+
+.photo {
+  max-width: 100%;
+}
+
+/* Containers */
+
+.container {
+  width: 90vw;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.splash {
+  background-color: #0045ce;
+  color: white;
+}
+
+.splash .heading-1 {
+  margin-top: 72px;
+  margin-bottom: 20px;
+}
+
+/* Navigation */
+
+.nav {
+  width: 90vw;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.nav__logo img {
+  width: 138px;
+}
+
+/* Buttons */
+
+.button {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 12px 24px;
+  cursor: pointer;
+  /*transition: ease-in-out background 200ms;*/
+  border: none;
+  border-radius: 6px;
+  color: white !important;
+  display: inline-block;
+}
+
+.button--primary {
+  background: #256cf8;
+  color: white;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.button--primary:hover,
+.button--primary:active {
+  background-color: #345af7;
+}
+
+/* Links */
+
+a,
+a:visited {
+  color: #0045ce;
+}
+
+.splash a,
+.splash a:visited {
+  color: inherit;
+}
+
+/* Accordion */
+
+.accordion__arrow {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .accordion-item {
+    border-bottom: 1px solid #a1a6b3;
+  }
+
+  .accordion__header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 16px;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .accordion__header--open {
+    /*border-bottom: none;*/
+    padding-bottom: 10px;
+  }
+
+  .accordion__arrow {
+    display: unset;
+    opacity: 0.7;
+    transition: all ease-in-out 200ms;
+    position: relative;
+    left: -6px;
+  }
+
+  .accordion__arrow:hover {
+    opacity: 1;
+  }
+
+  .accordion__arrow--open {
+    transition: all ease-in-out 200ms;
+    transform: rotate(90deg);
+  }
+
+  .accordion__text {
+    display: none;
+    opacity: 0;
+    transition: all ease-in-out 400ms;
+  }
+
+  .accordion__text--visible {
+    display: unset;
+    /* opacity: 0; */
+    transition: all ease-in-out 400ms;
+    display: block;
+    margin-top: 0;
+  }
+
+  .accordion__text--fade {
+    opacity: 1;
+  }
+}
+
+/*footer*/
+
+.footer {
+  background-color: #26282d;
+  color: white;
+}
+
+.footer a,
+.footer a:visited {
+  color: white;
+}
+
+.footer__address {
+  text-decoration: none;
+  margin: 16px 0;
+  display: inline-block;
+  line-height: 1.6;
+}
+
+.footer .container {
+  padding: 80px 0;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_list-item {
+  margin: 0 0 5px;
+}
+
+.footer_list-item--align-right {
+  text-align: right;
+}
+
+.footer .heading-3 {
+  margin: 0;
+}
+
+.footer .container__social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .container__social .social__link {
+  opacity: 0.7;
+  transition: ease-in-out all 100ms;
+  margin-right: 12px;
+}
+
+.footer .container__social .social__link:last-child {
+  margin-right: 0;
+}
+
+.footer .container__social .social__link:hover {
+  opacity: 0.9;
+}
+
+.footer .container__copyright {
+  margin-top: 48px;
+  color: #a1a6b3;
+}
+
+.footer .container__copyright .body {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 0 24px;
+  }
+
+  .footer .container {
+    padding: 48px 0;
+  }
+
+  .footer .grid__item {
+    margin-top: 24px;
+  }
+
+  .footer .container__social {
+    justify-content: left;
+    margin-top: 28px;
+  }
+
+  .footer .container__social .social__link {
+    margin-right: 20px;
+  }
+
+  .footer_list-item--align-right {
+    text-align: left;
+  }
+}
+
+/*aux pages*/
+
+.aux-page .container {
+  padding: 24px 0;
+}
+
+#err-404 .splash {
+  background: #f0f4fa;
+  color: #1e67fc;
+  min-height: calc(100vh - 429px);
+}
+
+#err-404 .splash .container {
+  padding: 72px 0;
+}

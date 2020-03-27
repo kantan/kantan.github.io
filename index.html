@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N3QMKQK");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Segment -->
+    <script>
+      !(function() {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked)
+            window.console &&
+              console.error &&
+              console.error("Segment snippet included twice.");
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              "trackSubmit",
+              "trackClick",
+              "trackLink",
+              "trackForm",
+              "pageview",
+              "identify",
+              "reset",
+              "group",
+              "track",
+              "ready",
+              "alias",
+              "debug",
+              "page",
+              "once",
+              "off",
+              "on"
+            ];
+            analytics.factory = function(t) {
+              return function() {
+                var e = Array.prototype.slice.call(arguments);
+                e.unshift(t);
+                analytics.push(e);
+                return analytics;
+              };
+            };
+            for (var t = 0; t < analytics.methods.length; t++) {
+              var e = analytics.methods[t];
+              analytics[e] = analytics.factory(e);
+            }
+            analytics.load = function(t, e) {
+              var n = document.createElement("script");
+              n.type = "text/javascript";
+              n.async = !0;
+              n.src =
+                "https://cdn.segment.com/analytics.js/v1/" +
+                t +
+                "/analytics.min.js";
+              var a = document.getElementsByTagName("script")[0];
+              a.parentNode.insertBefore(n, a);
+              analytics._loadOptions = e;
+            };
+            analytics.SNIPPET_VERSION = "4.1.0";
+            analytics.load("4cdzj5tDvbs70ZKcpHgki6uoTuLWpggM");
+            analytics.page();
+          }
+      })();
+    </script>
+    <!-- Segment -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="Tradesperson looking for new leads, customers and jobs? Find them easily on the Kantan app."
+    />
+    <meta name="theme-color" content="#2F4DFB" />
+    <!-- Line below recreates the abilities of modern browsers in older browsers-->
+    <!--if IEscript(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')-->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500|Work+Sans:600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+
+    <!-- Generated using https://metatags.io/ -->
+    <!-- Primary Meta Tags -->
+    <title>Kantan</title>
+    <meta name="title" content="Kantan" />
+    <meta
+      name="description"
+      content="We're changing the lives of tradespeople by giving them the tools to excel in a competitive marketplace."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kantan" />
+    <meta
+      property="og:description"
+      content="We're changing the lives of tradespeople by giving them the tools to excel in a competitive marketplace."
+    />
+    <meta property="og:image" content="/assets/meta-cover.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Kantan" />
+    <meta
+      property="twitter:description"
+      content="We're changing the lives of tradespeople by giving them the tools to excel in a competitive marketplace."
+    />
+    <meta property="twitter:image" content="/assets/meta-cover.png" />
+  </head>
+  <body style="background-color: #f0f4fa;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N3QMKQK"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header class="splash">
+      <nav class="nav">
+        <div class="nav--left">
+          <a class="nav__logo" href="/">
+            <img src="assets/icons/kantan-logo-blue.svg" alt="Kantan logo" />
+          </a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="grid">
+          <div class="grid__item desk--one-half lap--three-quarters one-whole">
+            <h1 class="heading-1">We've moved!</h1>
+            <p class="sub-title">Come and find us on our new domain:</p>
+            <a href="https://kantan.co.uk" class="button button--primary"
+              >kantan.co.uk</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

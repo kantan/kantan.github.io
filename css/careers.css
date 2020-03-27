@@ -1,0 +1,254 @@
+/* Header */
+
+.splash {
+  background-color: #0045ce;
+}
+
+.splash .heading-1,
+.splash .sub-title {
+  color: #f0f4fa;
+}
+
+.splash .heading-1 {
+  margin-top: 88px;
+}
+
+#img--tech-team {
+  margin-top: 20px;
+  position: relative;
+  bottom: -4px;
+  max-width: 100%;
+}
+
+.splash--right {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .splash--left {
+    margin-bottom: 48px;
+  }
+
+  .splash--right {
+    vertical-align: bottom;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash--left {
+    margin-bottom: -24px;
+  }
+
+  #img--tech-team {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .splash .container {
+    padding: 60px 0 0;
+  }
+
+  .splash .heading-1 {
+    margin-top: 0;
+  }
+}
+
+/* Values */
+
+#values img {
+  width: 100%;
+}
+
+#values .container {
+  padding: 24px 0;
+}
+
+#values .heading-3 {
+  color: #256cf8;
+  margin: 22px 0 20px;
+}
+
+@media (max-width: 1024px) {
+  #values {
+    margin-bottom: 10px;
+  }
+
+  #values .container {
+    padding: 48px 0;
+  }
+
+  #values .values__list__item {
+    margin-bottom: 42px;
+  }
+
+  #values .values__list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  #values .heading-3 {
+    margin: 0 0 3px 0;
+  }
+
+  #values .body {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #values .container {
+    padding-bottom: 0;
+  }
+
+  #values .body {
+    margin: 6px 0 0 0;
+  }
+}
+
+#team-photo {
+  margin: 12px 0 36px 0;
+}
+
+@media (max-width: 1024px) {
+  #team-photo {
+    margin: 12px 0;
+  }
+}
+
+/* Open positions */
+
+#open-positions .container {
+  padding: 24px 0;
+}
+
+#open-positions .heading-2 {
+  margin: 0 0 30px;
+}
+
+#open-positions .body {
+  max-width: 600px;
+  color: #61646b;
+  margin: 48px 0 30px;
+}
+
+@media (max-width: 480px) {
+  #open-positions .body {
+    margin: 0;
+  }
+}
+
+#lever-jobs-container .lever-job-title {
+  color: #0045ce !important;
+}
+
+#lever-jobs-container .lever-job-tag {
+  color: #61646b !important;
+}
+
+@media (min-width: 768px) {
+  #lever-jobs-container .lever-job-tag {
+    text-align: right;
+  }
+}
+
+/* What we love about working here */
+
+#what-we-love {
+  position: relative;
+}
+
+#what-we-love::before {
+  content: "";
+  position: absolute;
+  background-color: #f0f4fa;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 30vw);
+}
+
+@media (min-width: 1800px) {
+  #what-we-love::before {
+    height: calc(100% - 540px);
+  }
+}
+
+#what-we-love .container {
+  padding: 0 0 48px 0;
+}
+
+#what-we-love .heading-2 {
+  margin-bottom: 0;
+}
+
+#what-we-love #image__people {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 2px;
+}
+
+@media (min-width: 1024px) {
+  #what-we-love #image__people {
+    margin-top: 100px;
+  }
+}
+
+#what-we-love .illustration {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  #what-we-love .container {
+    padding-top: 0;
+  }
+
+  #what-we-love .heading-3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  #what-we-love #image__people {
+    margin-top: 40px;
+    width: 100vw;
+    overflow-x: hidden;
+    right: calc((100vw - 90vw) / 2);
+  }
+}
+
+/* Company benefits */
+
+#company-benefits .container {
+  padding: 24px 0 0 0;
+  text-align: center;
+}
+
+#company-benefits .heading-3 {
+  margin-bottom: 0;
+}
+
+#company-benefits .body {
+  margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+  #company-benefits .container {
+    padding: 48px 0 0 0;
+  }
+
+  #company-benefits .heading-2 {
+    margin: 0 0 18px;
+  }
+
+  #company-benefits .heading-3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.diverse-team-illustration {
+  margin-bottom: -4px;
+}

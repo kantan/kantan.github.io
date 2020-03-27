@@ -1,0 +1,141 @@
+/* Header */
+
+.splash {
+  background: #f0f4fa;
+  color: #272f77;
+  padding-bottom: 48px;
+
+  background-image: url(../assets/illustrations/tradespeople.svg);
+  background-repeat: no-repeat;
+  background-position: 46vw bottom;
+}
+
+.splash .heading-1 {
+  color: #1e67fc;
+}
+
+@media (min-width: 1024px) {
+  .splash .heading-1 {
+    margin-top: 72;
+  }
+}
+
+@media (max-width: 1024px) {
+  .splash {
+    background-position: 35vw bottom;
+    background-size: 70vw;
+    padding-bottom: 24vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash {
+    background-position: center bottom;
+    background-size: 100%;
+    padding-bottom: 40vw;
+  }
+}
+
+/* Benefits */
+
+#benefits {
+  padding: 24px 0 42px 0;
+}
+
+.benefits__list__item .heading-3 {
+  margin: 24px 0 12px 0;
+  width: 75%;
+}
+
+@media (min-width: 1024px) {
+  .benefits__list__item:nth-child(even) img {
+    margin-top: 24px;
+  }
+
+  .benefits__list__item:nth-child(odd) img {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .benefits__list {
+    padding-top: 16px;
+  }
+
+  .benefits__list__item .body {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .benefits__list {
+    margin-top: -12px;
+  }
+
+  .benefits__list__item {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  #benefits img {
+    width: 100%;
+  }
+}
+
+/* Join our team */
+
+#join-our-team {
+  background-color: #0a296a;
+  color: white;
+}
+
+#join-our-team .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+}
+
+#join-our-team .heading-2 {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+#join-our-team .body {
+  margin: 0px;
+}
+
+#join-our-team .button {
+  margin-top: 32px;
+}
+
+#img--tech-team--small {
+  max-width: 222px;
+  position: relative;
+  bottom: -4px;
+}
+
+@media (max-width: 1024px) {
+  #join-our-team .container {
+    justify-content: left;
+  }
+
+  #join-our-team .body {
+    max-width: 100%;
+  }
+
+  #join-our-team .container--inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #join-our-team .image-container {
+    text-align: right;
+    margin-top: -48px;
+  }
+
+  #join-our-team #img--tech-team--small {
+    margin-top: 48px;
+  }
+}
