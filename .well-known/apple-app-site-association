@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "6UAKDXDZYL.tech.kantan.kantanApp.dev",
+        "paths": ["/login"]
+      }
+    ]
+  }
+}
